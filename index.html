@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="uplift"> 
+    <h1>Payment Form</h1><hr>
+    <form action="post">
+        <h3>Login Details</h3>
+        <p>Email ID: <input type="email" name="email" id="email" required></p>
+        <p>Password: <input type="password" name="password" id="password" required></p>
+        <hr>
+
+        <h3>Personal Details</h3>
+        <p>Name: <input type="text" name="name" id="name" required></p>
+        <p>Mobile Number: <input type="number" name="mobile" id="mobile" required></p>
+        <p>
+            Gender: 
+            <input type="radio" name="male" id="male">Male
+            <input type="radio" name="female" id="female">Female
+        </p>
+        <p>Address: <textarea name="address" id="address" cols="80" rows="5"></textarea></p>
+        <p>Date of Birth: <input type="date" name="dob" id="dob" required></p>
+        <hr>
+        
+        <h3>Payment Details</h3>
+        <p>
+            Card Type:
+            <img id="card" src="/Portfolio/visa.jpg" alt="visa">
+            <img src="/Portfolio/rupay.png" alt="visa">
+            <img src="/Portfolio/Mastercard.jpg" alt="visa">
+            <select name="type" id="type" required>
+                <option value="--select--">--Select--</option>
+                <option value="VISA">VISA</option>
+                <option value="Rupay">Rupay</option>
+                <option value="Mastercard">Mastercard</option>
+            </select>
+        </p>
+        <p>Card Number: <input type="number" name="card" id="card" required></p>
+        
+        
+        <p>Expiry Date of Card: <input type="date" name="exp" id="exp" required></p>
+        <p>CVV: <input type="password" name="cvv" id="cvv" required></p>
+        <hr>
+    <div class="buttons">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </div>
+    </form>
+</div>
+</body>
+</html>
